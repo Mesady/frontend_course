@@ -1,0 +1,19 @@
+.radio-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-form .form-input{
+    text-align: center;
+    
+}
+
+.form-input .form-label{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.radio-form .form-button{
+    margin-top: 10px;
+    text-align: center;
+}
