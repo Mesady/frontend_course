@@ -47,7 +47,7 @@ function parseJwt (token: any) {
 
 export async function postRadio(resultHandler:(run: RadioData)=>void, data:MyFormValues,  
                                             auth_context:AuthContext | null, navigate:NavigateFunction){
-    const run = {
+    const radios = {
         radiourl: data.link,
         name: data.name,
         tag: data.tag,
@@ -84,7 +84,7 @@ export async function postRadio(resultHandler:(run: RadioData)=>void, data:MyFor
     })
     api.post<RadioData>(
         '/radiouser/', 
-        run, 
+        radios, 
         {
             headers: {
                 'Content-Type': 'application/json'

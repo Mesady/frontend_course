@@ -24,7 +24,7 @@ const addRadio = (run: RadioData) =>{
                   <p>YourRadios</p>
                 </a>
                 <li className="navbar-item">
-                   <button className="btn" onClick={switchForm}>Sign up</button>
+                   <button className="btn" onClick={switchForm}>Add radio</button>
                 </li>
                 {form && <Modal title="Add radio" onClose={switchForm}>
                 <CreateRadio onAdd={addRadio} closeModal={switchForm}/>
